@@ -2,6 +2,14 @@ angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
+  $scope.cards = [
+    { image: 'img/1.jpg',title: 'LabTest1'},
+    { image: 'img/2.jpg',title: 'Chill', id: 2 },
+    { image: 'img/2.jpg',title: 'Dubstep', id: 3 },
+    { image: 'img/4.jpg',title: 'Indie', id: 4 },
+    { image: 'img/5.jpg',title: 'Rap', id: 5 },
+    { image: 'img/6.jpg',title: 'Cowbell', id: 6 }
+  ];
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -29,7 +37,7 @@ angular.module('starter.controllers', [])
     $scope.modal.show();
   };
 
-  // Perform the login action when the user submits the login form
+   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
 
@@ -42,7 +50,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
+  $scope.cards = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
     { title: 'Dubstep', id: 3 },
@@ -54,3 +62,4 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
+
