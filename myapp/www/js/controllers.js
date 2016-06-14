@@ -5,10 +5,23 @@ angular.module('starter.controllers', [])
   $scope.cards = [
     { image: 'img/1.jpg',title: 'LabTest1'},
     { image: 'img/2.jpg',title: 'Chill', id: 2 },
-    { image: 'img/2.jpg',title: 'Dubstep', id: 3 },
+    { image: 'img/3.jpg',title: 'Dubstep', id: 3 },
     { image: 'img/4.jpg',title: 'Indie', id: 4 },
     { image: 'img/5.jpg',title: 'Rap', id: 5 },
     { image: 'img/6.jpg',title: 'Cowbell', id: 6 }
+  ];
+
+   $scope.listitems = [
+    { title: 'LabTest1' ,url:''},
+    { title: 'LabTest2' ,url:''},
+    { title: 'LabTest3' ,url:''},
+    { title: 'LabTest4' ,url:''},
+    { title: 'LabTest5' ,url:''},
+    { title: 'LabTest6' ,url:''},
+    { title: 'LabTest7' ,url:''},
+    { title: 'LabTest8' ,url:''},
+    { title: 'LabTest9' ,url:''},
+    { title: 'LabTest10' ,url:''}
   ];
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -48,18 +61,4 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.cards = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
 

@@ -1,5 +1,20 @@
 <ion-view view-title="Order Test">
   <ion-content>
     <h1>Explore-All</h1>
+    <ion-item>
+    <div class="row responsive-sm" >
+   
+      <div class="col-25 cardView text-center" ng-repeat="card in cards">
+        <p><img ng-src="{{card.image}}"></p>
+ <p>{{card.title}}
+</p>
+<p>
+<button class="button button-positive" ng-click="addToCard()">ADD TO CART</button>
+<button class="button button-royal" ng-click="addToWishList()">ADD TO Wishlist</button>
+
+</p>
+</div>
+</div>
+</ion-item>
   </ion-content>
 </ion-view>
