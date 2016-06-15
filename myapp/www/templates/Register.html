@@ -1,23 +1,33 @@
-<ion-view view-title="Register">
-  <ion-content>
-  
+
     <ion-modal-view class="registerModal">
   <ion-header-bar>
-    <h1 class="title">Login</h1>
+    <h1 class="title">Register</h1>
     <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+      <button class="button button-clear" ng-click="closeRegister()">Close</button>
     </div>
   </ion-header-bar>
   <ion-content class="padding50">
-    <form ng-submit="doRegister()" name="RegisterForm" ng-controller="logIncontroller" novalidate>
+    <form ng-submit="doRegister()" name="RegisterForm" ng-controller="registercontroller" novalidate>
       <div class="list">
         <label class="item item-input">
+          <span class="input-label">Name</span>
+          <input type="text" ng-model="registerData.name" ng-minlength="3" ng-maxlength="6">
+           <p ng-show="RegisterForm.name.$invalid && !RegisterForm.name.$pristine" class="help-block">You name is required.</p>
+        </label>
+        <label class="item item-input">
           <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
+          <input type="text" ng-model="registerData.username" >
+            <p ng-show="RegisterForm.username.$invalid && !RegisterForm.username.$pristine" class="help-block">You User name is required.</p>
         </label>
         <label class="item item-input">
           <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
+          <input type="password" ng-model="registerData.password" >
+            <p ng-show="RegisterForm.password.$invalid && !RegisterForm.password.$pristine" class="help-block">You name is required.</p>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="text" ng-model="registerData.email" >
+            <p ng-show="RegisterForm.email.$invalid && !RegisterForm.email.$pristine" class="help-block">You name is required.</p>
         </label>
         <label class="item">
           <button class="button button-block button-positive" type="submit" ng-disabled="RegisterForm.$isInvalid">Register</button>
@@ -28,6 +38,3 @@
 
   </ion-content>
 </ion-modal-view>
-
-  </ion-content>
-</ion-view>
