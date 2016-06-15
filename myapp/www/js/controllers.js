@@ -50,16 +50,30 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope) {
-  $scope.cards = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+  $scope.playlists = [
+    { title: 'Acute Hepatitis Profile (MHD1100)', id: 1 },
+    { title: 'Advanced Cardiac Risk (MHD1000)', id: 2 },  
+    { title: 'Amphetamine Screen (MHD505)', id: 3 },
+    { title: 'Anemia Package (MHD200)', id: 4 },
+    { title: 'Arthritis Package (MHD900)', id: 5 },
+    { title: 'Asthma Profile (MHD101)', id: 6 }
   ];
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('ProductCtrl', function($scope) {
+  $scope.products = [
+    { title: 'Acute Hepatitis Profile (MHD1100)', id: 1 },
+    { title: 'Advanced Cardiac Risk (MHD1000)', id: 2 },  
+    { title: 'Amphetamine Screen (MHD505)', id: 3 },
+    { title: 'Anemia Package (MHD200)', id: 4 },
+    { title: 'Arthritis Package (MHD900)', id: 5 },
+    { title: 'Asthma Profile (MHD101)', id: 6 }
+  ];
+})
+
+.controller('ProductCtrl', function($scope, $stateParams) {
 });
 

@@ -1,0 +1,12 @@
+<ion-view view-title="Order Test">
+  <ion-content>
+    <h1>Explore-All</h1>
+
+    <ion-list>
+      <ion-item ng-repeat="product in products" href="#/app/products/{{products.id}}">
+        {{products.title}}
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
