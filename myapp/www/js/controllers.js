@@ -1,7 +1,5 @@
-angular.module('starter.controllers', [])
-
+angular.module('starter', [])
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-
   $scope.cards = [
     { image: 'img/1.jpg',title: 'LabTest1'},
     { image: 'img/2.jpg',title: 'Chill', id: 2 },
@@ -10,7 +8,6 @@ angular.module('starter.controllers', [])
     { image: 'img/5.jpg',title: 'Rap', id: 5 },
     { image: 'img/6.jpg',title: 'Cowbell', id: 6 }
   ];
-
    $scope.listitems = [
     { title: 'LabTest1' ,url:''},
     { title: 'LabTest2' ,url:''},
@@ -59,36 +56,8 @@ angular.module('starter.controllers', [])
     $timeout(function() {
       $scope.closeLogin();
     }, 1000);
+  }
+  });
 
 
-  };
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Acute Hepatitis Profile (MHD1100)', id: 1 },
-    { title: 'Advanced Cardiac Risk (MHD1000)', id: 2 },  
-    { title: 'Amphetamine Screen (MHD505)', id: 3 },
-    { title: 'Anemia Package (MHD200)', id: 4 },
-    { title: 'Arthritis Package (MHD900)', id: 5 },
-    { title: 'Asthma Profile (MHD101)', id: 6 }
-  ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-})
-
-.controller('ProductCtrl', function($scope) {
-  $scope.products = [
-    { title: 'Acute Hepatitis Profile (MHD1100)', id: 1 },
-    { title: 'Advanced Cardiac Risk (MHD1000)', id: 2 },  
-    { title: 'Amphetamine Screen (MHD505)', id: 3 },
-    { title: 'Anemia Package (MHD200)', id: 4 },
-    { title: 'Arthritis Package (MHD900)', id: 5 },
-    { title: 'Asthma Profile (MHD101)', id: 6 }
-  ];
-})
-
-.controller('ProductCtrl', function($scope, $stateParams) {
-
-});
 
