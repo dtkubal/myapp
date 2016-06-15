@@ -82,9 +82,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/home.html'
         }
       }
-<<<<<<< HEAD
+
     });
-=======
+
     })
     
 
@@ -98,7 +98,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
 
->>>>>>> 738b14a61ce1f9d5e53fbdee9ebe84242f5c6863
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/templates/home.html');
 });

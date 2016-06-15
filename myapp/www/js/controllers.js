@@ -60,9 +60,9 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
 
-<<<<<<< HEAD
+
   };
-=======
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Acute Hepatitis Profile (MHD1100)', id: 1 },
@@ -89,6 +89,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ProductCtrl', function($scope, $stateParams) {
->>>>>>> 738b14a61ce1f9d5e53fbdee9ebe84242f5c6863
+
 });
 
