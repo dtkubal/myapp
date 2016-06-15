@@ -60,6 +60,35 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
 
+<<<<<<< HEAD
   };
+=======
+.controller('PlaylistsCtrl', function($scope) {
+  $scope.playlists = [
+    { title: 'Acute Hepatitis Profile (MHD1100)', id: 1 },
+    { title: 'Advanced Cardiac Risk (MHD1000)', id: 2 },  
+    { title: 'Amphetamine Screen (MHD505)', id: 3 },
+    { title: 'Anemia Package (MHD200)', id: 4 },
+    { title: 'Arthritis Package (MHD900)', id: 5 },
+    { title: 'Asthma Profile (MHD101)', id: 6 }
+  ];
+})
+
+.controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller('ProductCtrl', function($scope) {
+  $scope.products = [
+    { title: 'Acute Hepatitis Profile (MHD1100)', id: 1 },
+    { title: 'Advanced Cardiac Risk (MHD1000)', id: 2 },  
+    { title: 'Amphetamine Screen (MHD505)', id: 3 },
+    { title: 'Anemia Package (MHD200)', id: 4 },
+    { title: 'Arthritis Package (MHD900)', id: 5 },
+    { title: 'Asthma Profile (MHD101)', id: 6 }
+  ];
+})
+
+.controller('ProductCtrl', function($scope, $stateParams) {
+>>>>>>> 738b14a61ce1f9d5e53fbdee9ebe84242f5c6863
 });
 
