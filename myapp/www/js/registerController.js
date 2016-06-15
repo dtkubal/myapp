@@ -1,5 +1,5 @@
-angular.module('starter' ,[])
-		.controller('registercontroller' ,function($scope)
+angular.module('starter', ['ionic', 'starter.controllers'])
+.controller('registercontroller' , function($scope)
 		{
 //register
      $scope.registerData = {};
@@ -30,5 +30,5 @@ angular.module('starter' ,[])
     $timeout(function() {
       $scope.closeRegister();
     }, 1000);
-
-		});
+};
+});
