@@ -30,5 +30,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     $timeout(function() {
       $scope.closeRegister();
     }, 1000);
-};
+}
 });
