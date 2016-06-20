@@ -41,6 +41,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   //   }
   // })
 
+<<<<<<< HEAD
   // .state('app.ordertest', {
   //     url: '/products',
   //     views: {
@@ -75,6 +76,41 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   //       }
   //     }
   //   })
+=======
+  .state('app.browse', {
+      url: '/browse',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/browse.html'
+        }
+      }
+    })
+    .state('app.playlists', {
+      url: '/playlists',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/playlists.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+    .state('app.TestingCenter', {
+      url: '/TestingCenter',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/TestingCenter.html'
+        }
+      }
+    })
+    .state('app.Contact-Us', {
+      url: '/Contact-Us',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/Contact-Us.html'
+        }
+      }
+    })
+>>>>>>> b3d27ada9ba4363ad46e58e60238368e2cf12380
     .state('app.Home', {
       url: '/Home',
       views: {
@@ -82,6 +118,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/home.html'
         }
       }
+<<<<<<< HEAD
 
     });
 
@@ -99,6 +136,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   // });
 
 
+=======
+    });
+>>>>>>> b3d27ada9ba4363ad46e58e60238368e2cf12380
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/Home');
 });

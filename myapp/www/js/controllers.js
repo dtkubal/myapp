@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
-
+angular.module('starter', [])
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+<<<<<<< HEAD
 
   // $scope.cards = [
   //   { image: 'img/1.jpg',title: 'LabTest1'},
@@ -23,6 +23,28 @@ angular.module('starter.controllers', [])
   //   { title: 'LabTest9' ,url:''},
   //   { title: 'LabTest10' ,url:''}
   // ];
+=======
+  $scope.cards = [
+    { image: 'img/1.jpg',title: 'LabTest1'},
+    { image: 'img/2.jpg',title: 'Chill', id: 2 },
+    { image: 'img/3.jpg',title: 'Dubstep', id: 3 },
+    { image: 'img/4.jpg',title: 'Indie', id: 4 },
+    { image: 'img/5.jpg',title: 'Rap', id: 5 },
+    { image: 'img/6.jpg',title: 'Cowbell', id: 6 }
+  ];
+   $scope.listitems = [
+    { title: 'LabTest1' ,url:''},
+    { title: 'LabTest2' ,url:''},
+    { title: 'LabTest3' ,url:''},
+    { title: 'LabTest4' ,url:''},
+    { title: 'LabTest5' ,url:''},
+    { title: 'LabTest6' ,url:''},
+    { title: 'LabTest7' ,url:''},
+    { title: 'LabTest8' ,url:''},
+    { title: 'LabTest9' ,url:''},
+    { title: 'LabTest10' ,url:''}
+  ];
+>>>>>>> b3d27ada9ba4363ad46e58e60238368e2cf12380
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -31,6 +53,7 @@ angular.module('starter.controllers', [])
   //});
 
   // Form data for the login modal
+<<<<<<< HEAD
   // $scope.loginData = {};
 
   // // Create the login modal that we will use later
@@ -91,4 +114,38 @@ angular.module('starter.controllers', [])
 // .controller('ProductCtrl', function($scope, $stateParams) {
 
 // });
+=======
+  $scope.loginData = {};
+
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/login.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Triggered in the login modal to close it
+  $scope.closeLogin = function() {
+    $scope.modal.hide();
+  };
+
+  // Open the login modal
+  $scope.login = function() {
+    $scope.modal.show();
+  };
+
+   // Perform the login action when the user submits the login form
+  $scope.doLogin = function() {
+    console.log('Doing login', $scope.loginData);
+
+    // Simulate a login delay. Remove this and replace with your login
+    // code if using a login system
+    $timeout(function() {
+      $scope.closeLogin();
+    }, 1000);
+  }
+  });
+
+
+>>>>>>> b3d27ada9ba4363ad46e58e60238368e2cf12380
 
