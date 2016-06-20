@@ -32,49 +32,49 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/search.html'
-      }
-    }
-  })
+  // .state('app.search', {
+  //   url: '/search',
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: 'templates/search.html'
+  //     }
+  //   }
+  // })
 
-  .state('app.ordertest', {
-      url: '/products',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/ordertest.html',
-          controller: 'ProductCtrl'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-    .state('app.TestingCenter', {
-      url: '/TestingCenter',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/TestingCenter.html'
-        }
-      }
-    })
-    .state('app.Contact-Us', {
-      url: '/Contact-Us',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/Contact-Us.html'
-        }
-      }
-    })
+  // .state('app.ordertest', {
+  //     url: '/products',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/ordertest.html',
+  //         controller: 'ProductCtrl'
+  //       }
+  //     }
+  //   })
+  //   .state('app.playlists', {
+  //     url: '/playlists',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/playlists.html',
+  //         controller: 'PlaylistsCtrl'
+  //       }
+  //     }
+  //   })
+  //   .state('app.TestingCenter', {
+  //     url: '/TestingCenter',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/TestingCenter.html'
+  //       }
+  //     }
+  //   })
+  //   .state('app.Contact-Us', {
+  //     url: '/Contact-Us',
+  //     views: {
+  //       'menuContent': {
+  //         templateUrl: 'templates/Contact-Us.html'
+  //       }
+  //     }
+  //   })
     .state('app.Home', {
       url: '/Home',
       views: {
@@ -82,24 +82,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/home.html'
         }
       }
-<<<<<<< HEAD
+
     });
-=======
-    })
+
+    
     
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  });
+  // .state('app.single', {
+  //   url: '/playlists/:playlistId',
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: 'templates/playlist.html',
+  //       controller: 'PlaylistCtrl'
+  //     }
+  //   }
+  // });
 
->>>>>>> 738b14a61ce1f9d5e53fbdee9ebe84242f5c6863
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/templates/home.html');
+  $urlRouterProvider.otherwise('/app/Home');
 });
 

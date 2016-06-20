@@ -1,12 +1,43 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-dark">
+      <h1 class="title">Left</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item menu-close href="#/app/TestingCenter">
+          Find a Testing Center
+        </ion-item>
+        <ion-item menu-close href="#/app/ordertest">
+          Order Tests
+        </ion-item>
+        <ion-item menu-close href="#/app/Contact-Us">
+          Contact Us
+       </ion-item>
+	  	<ion-item menu-close href="#/app/Register">
+          Register
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    
+  </ion-side-menu>
+</ion-side-menus>
+
+
+<!--<ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-<<<<<<< HEAD
+
     <ion-nav-bar class="bar bar-header bar-dark">
-=======
+
     <ion-nav-bar class="bar-balanced">
->>>>>>> 738b14a61ce1f9d5e53fbdee9ebe84242f5c6863
-      <ion-nav-back-button>
-      </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
@@ -17,8 +48,7 @@
  <ion-nav-buttons side="right">
  <i class="icon ion-android-person"></i><button class="button button-clear button-positive" ng-click="login()">Login</button>    
  <i class="icon ion-android-person"></i><button class="button button-clear button-positive" ng-click="register()">Register</button>    
-  
-   </ion-nav-buttons>
+  </ion-nav-buttons>
 
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
@@ -39,10 +69,10 @@
         <ion-item menu-close href="#/app/Contact-Us">
           Contact Us
        </ion-item>
-	 <!-- 	<ion-item menu-close href="#/app/Register">
+	  	<ion-item menu-close href="#/app/Register">
           Register
-        </ion-item>	 -->
+        </ion-item>	 
       </ion-list>
     </ion-content>
   </ion-side-menu>
-</ion-side-menus>
+</ion-side-menus>-->
